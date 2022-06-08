@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+.logo img{
+  width: 200px;
+  height: 200px;
+}
+.logo{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+header{
+  background: white;
+  position: fixed;
+  width: 100%;
+  height: 70px ;
+  top: 0;
+  border-bottom: 1px solid LightGray;
+  left: 0;
+}
+.menu-main {
+  list-style: none;
+  margin: 0 auto;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .5s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color:#3CB371;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #3CB371;
+  transition: .5s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+.zag{
+  padding-bottom: 40px;
+  padding-top: 100px;
+  margin: 0 auto;
+  width:  50%;
+  text-align: center;
+  font-size: 60px;
+  font-family: Roboto Slab;
+  color: DarkCyan;
+}
+.osn{
+  font-size: 27px;
+  text-align: left;
+  padding: 40px 20px 20px 20px;
+  width: 50%;
+  font-family: Roboto Slab;
+  margin: 0 auto;
+  border-right: 1px solid LightGray;
+  border-left: 1px solid LightGray;
+}
+.osnt{
+   font-size: 27px;
+  text-align: left;
+  padding: 40px;
+  width: 55%;
+  font-family: Roboto Slab;
+  margin: 0 auto;
+}
+.hr-line {
+  margin: 0 auto;
+  width: 45%;
+  border: none;
+  border-top: 1px solid #333;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+
+h1 {
+   font-family: 'Roboto Slab', cursive;
+  color: MediumSeaGreen;
+  text-align: center; 
+}
+span:nth-child(3), span:nth-child(7) { 
+font-size: 60px;
+}
+
+span:nth-child(1), span:nth-child(9), span:nth-child(5)  {
+  font-size: 110px;
+}
+
+.ppp{
+  padding-bottom: 2px;
+    border-bottom: 2px solid #4d4d4d;
+    text-transform: none;
+}
+
+.h11{
+  color: LightSkyBlue;
+}
+.h12{
+  color: MediumAquamarine;
+}
+.h13{
+  color:PaleTurquoise;
+}
+A {
+    color: gray; /* Цвет ссылок */
+   }
+   A:visited {
+    color: gray; /* Цвет посещенных ссылок */
+   }

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+.logo img{
+  width: 200px;
+  height: 200px;
+}
+.logo{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+header{
+  background: white;
+  position: sticky;
+  width: 100%;
+  height: 70px ;
+  top: 0;
+  border-bottom: 1px solid LightGray;
+  left: 0;
+}
+.menu-main {
+  list-style: none;
+  margin: 0 auto;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .5s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color:#3CB371;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #3CB371;
+  transition: .5s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+
+}
+
+.div1 {
+  font-family: system-ui, sans-serif;
+  text-align: center;
+}
+
+.div1 h1 {
+  font-size: 80px;
+  font-weight: 900;
+  
+  
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: white;
+  --stroke-color: lightblue;
+  
+  text-shadow: 
+    
+    var(--x-offset)
+    var(--y-offset)
+    0px
+    var(--background-color), 
+    
+    calc( var(--x-offset) - var(--stroke) )
+    calc( var(--y-offset) + var(--stroke) )
+    0px
+    var(--stroke-color);
+  
+}
+.hr-line {
+  margin: 0 auto;
+  width: 45%;
+  border: none;
+  border-top: 1px solid  LightGray;
+
+}
+.div2{
+  width: 60%;
+  height: 2000px;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  margin: 0 auto;
+  padding-top: 30px;
+  font-size: 35px;
+  text-align: left;
+  padding-bottom: 30px;
+  font-family:Roboto Slab;
+}
+.h11{
+  color: #3CB371;
+}
+.h12{
+  color: #fa8072;
+}
+.h13{
+  color: #48d1cc;
+}
